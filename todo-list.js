@@ -5,7 +5,6 @@ const closemodal = document.querySelector(".modal-button");
 // const listsStorage = JSON.parse(localStorage.getItem("newList"));
 
 const lists = [];
-render();
 button.addEventListener("click", () => {
   const newList = lists;
   if (input.value === "") {

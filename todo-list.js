@@ -3,10 +3,8 @@ const modal = document.getElementById("myModal");
 const closemodal = document.querySelector(".modal-button");
 // localStorage.setItem("newList", JSON.stringify(newList));
 // const listsStorage = JSON.parse(localStorage.getItem("newList"));
-// refactoring
 
 const lists = [];
-
 render();
 button.addEventListener("click", () => {
   const newList = lists;

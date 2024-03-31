@@ -5,6 +5,7 @@ const closemodal = document.querySelector(".modal-button");
 // const listsStorage = JSON.parse(localStorage.getItem("newList"));
 
 const lists = [];
+render();
 button.addEventListener("click", () => {
   const newList = lists;
   if (input.value === "") {
@@ -19,15 +20,15 @@ button.addEventListener("click", () => {
 function render() {
   let containerMetal = "";
   if (lists.length === 0) {
-    containerMetal = `<div class = "no-data" > No Data </div>`;
+    containerMetal = `<div id = "no-data" > No Data </div>`;
   } else {
     lists.map((list, index) => {
       containerMetal += `
                   <div class="list">  
                   <p>${index + 1}.${list}</p>
                   <div class="edit-delete"> 
-                  <button class="button-edit" onclick="editList(${index})"> edit</button>
-                  <button class="delete"onclick="deleteList(${index});">delete</button>
+                  <button class="edit" onclick="editList(${index})"> edit</button>
+                  <button class="delete" onclick="deleteList(${index});">delete</button>
                   </div>
                   </div>`;
     });

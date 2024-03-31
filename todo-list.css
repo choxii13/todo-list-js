@@ -14,7 +14,7 @@ body {
     rgb(54, 78, 82) 82%,
     rgb(59, 86, 81) 96%
   );
-  height: 100%;
+  height: 100vh;
 }
 
 .todo-list-container {
@@ -117,10 +117,10 @@ input:focus {
   justify-content: center;
 }
 
-.edit-delete button,
+.edit,
+.delete,
 .modal-button {
   cursor: pointer;
-  width: 4rem;
   border-radius: 0.3vw;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -129,13 +129,25 @@ input:focus {
   background-color: none;
   outline: none;
   border: none;
+  padding: 0.1rem 0.6rem;
 }
 .edit-delete button:hover {
   transition: all 0.5s linear;
-  border: 0.02vw solid rgb(60, 89, 88);
-  background-color: rgb(7, 216, 210);
+
   z-index: 100;
   box-shadow: 0.2vw 0.2vw 0.2vw 0.05vw rgb(15, 14, 14);
+}
+.delete {
+  background-color: rgb(201, 3, 3, 0.8);
+}
+.edit {
+  background-color: rgba(7, 216, 210, 0.8);
+}
+.delete:hover {
+  background-color: red;
+}
+.edit:hover {
+  background-color: rgb(7, 216, 210);
 }
 .edit-delete button:active {
   transition: all 0.5s linear;
@@ -256,4 +268,16 @@ h1 {
   transition: all 0.5s linear;
   border: 0.1vh solid rgb(10, 10, 10);
   box-shadow: inset 0.1vw 0.1vw 0.1vw 0.05vw rgb(15, 14, 14);
+}
+
+#no-data {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 0.8rem;
+  color: red;
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 180, 171);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 0.3px black;
 }

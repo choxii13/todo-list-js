@@ -14,7 +14,7 @@ body {
     rgb(54, 78, 82) 82%,
     rgb(59, 86, 81) 96%
   );
-  height: 100vh;
+  height: 100%;
 }
 
 .todo-list-container {
@@ -26,7 +26,6 @@ body {
   padding: 0.7rem;
   gap: 0.6rem;
   max-width: 30rem;
-  max-height: 40rem;
   border-radius: 10px;
   background: rgb(61, 89, 89);
   background: linear-gradient(
@@ -39,7 +38,6 @@ body {
     rgb(54, 78, 82) 82%,
     rgb(101, 206, 187) 96%
   );
-  overflow-y: auto;
   box-shadow: 0vh 0vh 10vh 0.3vh rgb(25, 31, 30);
   background-color: rgba(116, 126, 136, 0.2);
 }
